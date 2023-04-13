@@ -1,3 +1,4 @@
+//empty subarrays are also allowed
 class Solution {
 public:
     int maxSubArray(vector<int>& nums) {
@@ -13,3 +14,5 @@ public:
      return maxi;
     }
 };
+
+//to print the subarray keep the track of the start and end of subarray, this can be done by using 2 variables  just we need to add one extra condition that whenever sum == 0 the start=i and whenever maxi is updated i.e maxi<sum then update end variable by i 
